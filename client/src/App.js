@@ -2,8 +2,7 @@
 import Todos_Item from "./Components/Todos_items.js";
 
 function App() {
-  return(
-  <>
+  return(<>
     <div className="heading">
       <h1> To_dos List </h1>
     </div>

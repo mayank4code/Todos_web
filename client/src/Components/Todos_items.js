@@ -4,8 +4,8 @@ import { toast } from 'react-hot-toast';
 
 function Todos_Item() {
   const [items, setItems] = useState([]);
-  const [input, setInput] = useState("Task ");
-  const inputRef = useRef("Task ");
+  const [input, setInput] = useState("");
+  const inputRef = useRef(null);
 
   useEffect(() => {
     getAllTasks();
@@ -39,7 +39,7 @@ function Todos_Item() {
 
     if (data.success) {
       getAllTasks();
-      setInput("Task ");
+      setInput("");
       toast.success('Task Added successfully');
     } else {
       toast.error('Unable to Add Task ! Please try again later.');
