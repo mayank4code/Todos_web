@@ -1,12 +1,11 @@
-// import './App.css';
-import Todos_Item from "./Components/Todos_items.js";
+import TodosItem from "./Components/TodosItems.js";
 
 function App() {
   return(<>
     <div className="heading">
       <h1> To_dos List </h1>
     </div>
-    <Todos_Item/>
+    <TodosItem/>
   </>);
 }
 
